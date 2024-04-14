@@ -122,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function displayResult(overallIncome, tax) {
         const resultModal = document.getElementById('result');
-        resultModal.innerHTML = `<p>Your overall income will be: ₹${overallIncome.toFixed(2)}</p><p>Tax: ₹${tax.toFixed(2)}</p>`;
+        resultModal.innerHTML = `<p>Your overall income  after tax deduction will be: ₹${overallIncome.toFixed(2)}</p><p>Tax: ₹${tax.toFixed(2)}</p>`;
         modal.style.display = 'block';
     }
 });
