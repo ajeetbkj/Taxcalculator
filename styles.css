@@ -1,0 +1,181 @@
+.container {
+    max-width: 600px;
+    margin: 60px auto;
+   
+    
+    
+   
+    .form-group {
+        margin-bottom: 15px;
+        
+        }
+    #taxForm{
+        margin-right: 20px;
+    }
+    
+       
+    }
+    .title{
+        position: relative;
+        right:-40px;
+        top:-20px;
+        -webkit-text-fill-color: darkblue;
+    }
+    
+    
+
+
+.form-group {
+    margin-bottom: 20px;
+    
+}
+
+.error-icon {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 30%;
+    height: 30%;
+    overflow: auto;
+
+    
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input.form-control,
+select.form-control {
+    width: 50%;
+    height:25px;
+}
+#age{
+    height:35px;
+    
+}
+
+.btn {
+    width: 51%;
+    height: 35px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: blue;
+} 
+.text-white {
+    color: white;
+} 
+
+
+
+.question-mark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+/* Tooltip styles */
+.question-mark:hover::after {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    background-color: rgba(59, 78, 139, 0.96);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000;
+    margin-top: -35px;
+    margin-left: 5px;
+}
+.question-mark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer; /* Change cursor to indicate it's clickable/helpful */
+    margin-left: 5px; /* Adjust margin as needed */
+}
+
+.required-tooltip {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer; /* Change cursor to indicate it's clickable/helpful */
+    margin-left: -28px; /* Adjust as needed */
+    opacity: 1; /* Always visible */
+    transition: opacity 0.3s ease;
+    position: relative; /* Added position relative */
+}
+
+.required-tooltip::after {
+    content: "Please enter numbers only"; /* Tooltip message */
+    display: none; /* Initially hidden */
+    position: absolute;
+    top: -30px; /* Adjust distance from the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(59, 78, 139, 0.96);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    z-index: 1000; /* Ensure tooltip appears above other content */
+}
+
+.required-tooltip:hover::after {
+    display: block; /* Show on hover */
+}
+
+
+
+
+
